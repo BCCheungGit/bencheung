@@ -21,3 +21,13 @@ export const navLinks = [
     },
     
   ];
+
+
+
+  export const experiences = [
+    {
+      title: "Instructor",
+      company_name: "Code Ninjas (New York)",
+      
+    }
+  ]
