@@ -2,14 +2,20 @@
 import { motion } from "framer-motion";
 
 
-const ScrollButton = () => {
+interface ScrollButtonProps {
+    url: string,
+    text: string,
+
+}
+
+const ScrollButton: React.FC<ScrollButtonProps> = ({url, text}) => {
 
     return (
         <div className="w-full justify-center items-center mt-20 sm:flex hidden">
-        <a href="#about">
+        <a href={url}>
           <div className="flex flex-row gap-4 items-center">
           <div className="lg:flex hidden">
-            Learn More
+            {text}
           </div>
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-slate-100 hover:border-slate-400 group flex justify-center items-start p-2">
               <motion.div
