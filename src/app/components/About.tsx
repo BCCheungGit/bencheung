@@ -1,6 +1,7 @@
 "use client";
 
 import Pool from "./canvas/Pool";
+import ScrollButton from "./ScrollButton";
 
 
 const About = () => {
@@ -20,6 +21,7 @@ const About = () => {
             <p className="mt-10">I'm a sociable, quick-learning, curious thinker.</p>
             <p className="mt-5">I mainly work in Python and Typescript/Javascript, but I am working to expand my language skillset with C. I am especially proficient with full-stack web development, but am always open to learning new skills!</p>
             <p>In terms of non-tech related things, I enjoy swimming, piano, and ping pong!</p>
+            <ScrollButton url="#work" text="Keep Going!" />
             </div>
         </section>
         </>
