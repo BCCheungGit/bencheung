@@ -16,7 +16,7 @@ const Model = () => {
     });
     useFrame((state, delta) => {
       if (objRef.current) {
-        objRef.current.rotation.y += delta * 0.5; // Rotate the model
+        objRef.current.rotation.y += delta * 0.3; // Rotate the model
       }
     });
   
@@ -25,7 +25,7 @@ const Model = () => {
 
   const Pool = () => {
     return (
-      <div style={{ width: '100%', height: '600px' }}>
+      <div className='w-full sm:h-[600px] h-[400px]'>
         <Canvas camera={{ position: [0, 0, 5] }}>
           <ambientLight intensity={10} />
           <pointLight position={[10, 10, 10]} />
