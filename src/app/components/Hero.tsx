@@ -1,7 +1,7 @@
 "use client";
 
 import { Tilt } from "react-tilt";
-
+import { motion } from "framer-motion";
 
 
 
@@ -15,13 +15,13 @@ const Hero = () => {
         speed:          1000,   // Speed of the enter/exit transition
         transition:     true,   // Set a transition on enter/exit.
         axis:           null,   // What axis should be disabled. Can be X or Y.
-        reset:          true,    // If the tilt effect has to be reset on exit.
+        reset:          false,    // If the tilt effect has to be reset on exit.
         easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
     }
 
   return (
     <section className="bg-background relative w-full h-screen mx-auto">
-      <div className="sm:px-16 px-6 absolute inset-0 top-[120px] max-w-7xl mx-auto flex md:flex-row flex-col justify-between items-start gap-5">
+      <div className="sm:px-16 px-6 absolute inset-0 top-[120px] max-w-7xl mx-auto flex md:flex-row flex-col md:justify-between items-start gap-5">
         <div className="flex flex-col justify-center items-start mt-5">
           <h1 className="font-black text-white lg:text-[60px] sm:text-[40px] xs:text-[40px] text-[40px] lg:leading-[98px] md:mt-28 mt-0">
             Hello, I'm Ben.
@@ -29,6 +29,34 @@ const Hero = () => {
           <p className="font-medium lg:text-[25px] sm:text-[20px] xs:text-[20px] text-[16px] lg:leading-[40px]">
             A computer science student at NYU Shanghai
           </p>
+
+          <div className="w-full justify-center items-center mt-20 sm:flex hidden">
+            <a href="#about">
+              <div className="flex flex-row gap-4 items-center">
+              <div className="lg:flex hidden">
+                Learn More
+              </div>
+              <div className="w-[35px] h-[64px] rounded-3xl border-4 border-slate-100 hover:border-slate-400 group flex justify-center items-start p-2">
+                  <motion.div
+                    animate={{
+                      y: [0, 24, 0]
+                    }}
+                    transition={{
+                      duration: 1.5,
+                      repeat: Infinity,
+                      repeatType: "loop",
+                    }}
+                    className="w-3 h-3 rounded-full bg-slate-100 group-hover:bg-slate-400 mb-1"
+                  >
+
+                  </motion.div>
+              </div>
+              </div>   
+
+            </a>
+
+          </div>
+
         </div>
         <Tilt options={tiltOptions}>
         <div className="md:w-[500px] w-fit">
