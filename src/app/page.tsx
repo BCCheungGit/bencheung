@@ -4,6 +4,7 @@ import Navbar from "./components/NavBar";
 
 
 
+
 export default function Home() {
   return (
     <div className="relative z-0 bg-background">

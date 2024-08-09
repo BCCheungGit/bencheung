@@ -19,6 +19,7 @@
     "react-dom": "^18",
     "react-tilt": "^1.0.2",
     "tailwind-merge": "^2.4.0",
+    "tailwind-scrollbar-hide": "^1.1.7",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {

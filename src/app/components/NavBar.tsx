@@ -9,6 +9,7 @@ import {
     PopoverContent,
     PopoverTrigger,
   } from "@/components/ui/popover"
+import ScrollProgressBar from "./ScrollProgressBar";
   
 
 const Navbar = () => {
@@ -79,6 +80,7 @@ const Navbar = () => {
                 </div>
                 </Popover>
             </div>
+            <ScrollProgressBar />
         </nav>
     )
 }
