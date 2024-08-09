@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/NavBar";
 
 
+
 export default function Home() {
   return (
     <div className="relative z-0 bg-background">
@@ -11,7 +12,6 @@ export default function Home() {
         <Hero />
       </div>
       <About />
-
     </div>
 
   );

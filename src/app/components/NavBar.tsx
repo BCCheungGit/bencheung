@@ -17,17 +17,17 @@ const Navbar = () => {
     return (
         <nav className="sm:px-16 bg-background px-6 w-full flex items-center py-3 fixed top-0 z-20 border-b-2">
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-                <Link
-                    href="/"
+                <a
+                    href="/#"
                     className="flex items-center gap-2"
                     onClick={() => {
                         setActive("");
-                        window.scrollTo(0,0);
+                        window.scrollTo({top: 0, behavior: 'smooth'});
                     }}
                 >
                     <img src="/logo.svg" alt="logo" className="w-9 h-9 object-contain" />
                     <p className="text-white text-[18px] font-bold cursor-pointer flex">Ben Cheung &nbsp;<span className='md:block hidden'>|&nbsp;张弘弦</span></p>
-                </Link>
+                </a>
                 <ul className="list-none hidden sm:flex flex-row gap-10">
                 {navLinks.map((link) => (
             <li
