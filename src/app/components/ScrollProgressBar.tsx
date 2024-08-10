@@ -13,7 +13,7 @@ const ScrollProgressBar = () => {
   return (
     <motion.div
       style={{ scaleX }}
-      className="absolute bottom-0 left-0 right-0 h-1 bg-white origin-left"
+      className="absolute bottom-0 left-0 right-0 h-1 bg-[#7360cf] origin-left"
     />
   );
 };
