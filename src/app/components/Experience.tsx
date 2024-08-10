@@ -85,8 +85,8 @@ const Experience = () => {
         <section id="work">
             <div className='flex flex-col w-full min-h-screen sm:p-20 md:gap-0 gap-5'>
                 <div className='flex flex-col w-full items-start justify-start md:gap-10 gap-2 sm:ml-4 ml-10 sm:mt-0 mt-20'>
-                <h1 className="sm:text-[30px] text-[20px] text-white uppercase border-b-2 w-full mb-10">Experience</h1>
-                <p className='sm:text-[20px] text-[15px]'>Here's a timeline of what I've done so far:</p>
+                <h1 className="sm:text-[30px] text-[20px] text-white uppercase border-b-2 w-full">Experience</h1>
+                <p className='sm:text-[20px] text-[15px]'>Here&apos;s a timeline of what I&apos;ve done so far:</p>
                 </div>
 
             <div className='flex pl-10 pr-10 flex-col'>
