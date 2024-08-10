@@ -60,7 +60,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
     >
       <div>
         <h3 className="text-white text-[24px] font-bold"ref={ref}>{experience.title}</h3>
-        <p className="text-secondary text-[16px] font-semibold" style={{margin: 0}}>{experience.company_name}</p>
+        <p className="text-slate-400 text-[16px] font-semibold" style={{margin: 0}}>{experience.company_name}</p>
       </div>
   
       <ul className="mt-5 list-disc ml-5 space-y-2">
@@ -78,18 +78,24 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
 }
 
 const Experience = () => {
-    const { ref, inView } = useInView({ threshold: 0.25, triggerOnce: true });
+
     
     return (
         <>
         <section id="work">
-            <div className='flex flex-col w-full min-h-screen sm:p-20 p-10 md:gap-0 gap-5'>
-            <h1 className="sm:text-[30px] text-[20px] text-white uppercase m-10 border-b-2 w-[90%] mb-10">Experience</h1>
+            <div className='flex flex-col w-full min-h-screen sm:p-20 md:gap-0 gap-5'>
+                <div className='flex flex-col w-full items-start justify-start md:gap-10 gap-2 sm:ml-4 ml-10 sm:mt-0 mt-20'>
+                <h1 className="sm:text-[30px] text-[20px] text-white uppercase border-b-2 w-full mb-10">Experience</h1>
+                <p className='sm:text-[20px] text-[15px]'>Here's a timeline of what I've done so far:</p>
+                </div>
+
+            <div className='flex pl-10 pr-10 flex-col'>
                 <VerticalTimeline>
                     {experiences.map((experience, index) => (
                         <ExperienceCard key={`experience-${index}`} experience={experience} />
                         ))}
                 </VerticalTimeline>
+            </div>
             </div>
             </section>
         </>

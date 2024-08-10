@@ -2,6 +2,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import { Poppins } from "next/font/google";
+
+
+const poppins = Poppins( {
+  weight: "400",
+  subsets: ["latin"],
+
+});
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark scrollbar-hide" style={{scrollBehavior: 'smooth'}}>
-      <body className={inter.className}>{children}</body>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }

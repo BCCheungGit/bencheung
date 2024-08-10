@@ -16,7 +16,7 @@ const Hero = () => {
         speed:          1000,   // Speed of the enter/exit transition
         transition:     true,   // Set a transition on enter/exit.
         axis:           null,   // What axis should be disabled. Can be X or Y.
-        reset:          false,    // If the tilt effect has to be reset on exit.
+        reset:          true,    // If the tilt effect has to be reset on exit.
         easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
     }
 
@@ -28,7 +28,7 @@ const Hero = () => {
             Hello, I&apos;m Ben.
           </h1>
           <p className="font-medium lg:text-[25px] sm:text-[20px] xs:text-[20px] text-[16px] lg:leading-[40px]">
-            A computer science student at NYU Shanghai
+            A computer science student at New York University
           </p>
           <ScrollButton url="#about" text="Learn more" />
 
