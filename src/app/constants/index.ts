@@ -70,7 +70,7 @@ export const experiences = [
     company_name: "Weelrn (Shanghai, remote)",
     icon: weelrn_logo,
     iconBg: "#FFFFFF",
-    date: "February 2024 - June 2024",
+    date: "February 2024 - July 2024",
     points: [
       "Led a team of six students to write Python scripts to run automated AI-generated learning cycles, containerized with Docker and deployed on the Cloud.",
       "Extracted data and performed analysis to quantify student interactions. ",
