@@ -3,7 +3,15 @@ import {
   codeninjas,
   ocm,
   purplek,
-  weelrn_logo
+  weelrn_logo,
+  docker,
+  css,
+  html,
+  javascript,
+  typescript,
+  react,
+  tailwind,
+  nodejs
 } from '../assets';
 
 
@@ -70,3 +78,37 @@ export const experiences = [
     ]
   }
 ]
+
+
+export const technologies = [{
+  name: "Docker",
+  icon: docker
+},
+{
+  name: "CSS",
+  icon: css
+},
+{
+  name: "HTML",
+  icon: html
+},
+{
+  name: "JavaScript",
+  icon: javascript
+},
+{
+  name: "TypeScript",
+  icon: typescript
+},
+{
+  name: "React",
+  icon: react
+},
+{
+  name: "Tailwind",
+  icon: tailwind
+},
+{
+  name: "Node.js",
+  icon: nodejs
+}]

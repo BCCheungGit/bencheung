@@ -1,8 +1,9 @@
 "use client";
 
+import { technologies } from "../constants";
+import BallCanvas from "./canvas/Ball";
 import Piano from "./canvas/Piano";
 import Pool from "./canvas/Pool";
-import ScrollButton from "./ScrollButton";
 
 
 const About = () => {
@@ -22,15 +23,27 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col md:w-1/2 w-full border-l-2 border-r-2 p-4 rounded-xl">
+                <div className="flex flex-col md:w-1/2 w-full md:border-l-2 md:border-r-2 p-4 rounded-xl">
                     <h1 className="sm:text-[30px] text-[20px] text-white uppercase border-b-2 w-full">About Me</h1>
                     <p className="mt-10">I&apos;m a sociable, quick-learning, curious thinker.</p>
                     <p className="mt-5">I mainly work in Python and Typescript/Javascript, but I am working to expand my language skillset with C. I am especially proficient with full-stack web development, but am always open to learning new skills!</p>
                     <p>In terms of non-tech related things, I enjoy swimming and playing the piano!</p>
-                    <ScrollButton url="#work" text="Keep Going!" />
                 </div>
                 </div>
             </section>
+            <div className="flex flex-col gap-4 w-full h-full sm:p-20 sm:ml-4 ml-10">
+            <div className="sm:text-[20px] text-[15px] text-white uppercase border-b-2 w-full">
+                Technologies
+            </div>
+            <div className="flex flex-row flex-wrap justify-center gap-10">
+                {technologies.map((technology) => (
+                    <div>
+                        <BallCanvas icon={technology.icon.src} />
+                    </div>
+                ))}
+
+            </div>
+            </div>
         </>
     )
 }
