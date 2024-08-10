@@ -16,7 +16,7 @@ const PoolModel = () => {
       }
     });
   
-    return <primitive object={obj.scene} ref={objRef} scale={[0.1, 0.1, 0.1]} />;
+    return <primitive object={obj.scene} ref={objRef} scale={[0.12, 0.12, 0.12]} />;
 };
 
 const Pool = () => {

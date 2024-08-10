@@ -19,7 +19,7 @@ const PianoModel = () => {
       }
     });
   
-    return <primitive object={obj} ref={objRef} scale={[1.3, 1.3, 1.3]} />;
+    return <primitive object={obj} ref={objRef} scale={[1.04, 1.04, 1.04]} />;
 };
 
 const Piano = () => {
