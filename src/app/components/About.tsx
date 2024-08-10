@@ -10,9 +10,9 @@ const About = () => {
     return (
         <>
             <section id="about" ></section>
-            <section className="w-full h-full items-start mt-40 sm:p-20 p-10 sm:mt-0 flex md:flex-row flex-col md:gap-0 gap-5">
+            <section className="w-full h-full items-start mt-20 sm:p-20 p-10 sm:mt-0 flex md:flex-row flex-col md:gap-0 gap-5">
             <div className="w-full h-full flex md:flex-row flex-col md:gap-10 gap-2">
-                <div className="md:w-1/2 w-full">
+                <div className="md:w-1/2 w-full sm:flex sm:flex-col hidden">
                     <div className="flex flex-row gap-0 items-center justify-center w-full h-full">
                         <Pool />
                         <Piano />
