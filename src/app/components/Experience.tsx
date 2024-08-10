@@ -83,19 +83,18 @@ const Experience = () => {
     return (
         <>
         <section id="work">
-            <div className='flex flex-col w-full min-h-screen sm:p-20 md:gap-0 gap-5'>
-                <div className='flex flex-col w-full items-start justify-start md:gap-10 gap-2 sm:ml-4 ml-10 sm:mt-0 mt-20'>
+            <div className='flex flex-col w-full gap-10 pl-10 pr-10 pt-10 mt-20'>
+                <div className='flex flex-col w-full items-start justify-start md:gap-10 gap-2'>
                 <h1 className="sm:text-[30px] text-[20px] text-white uppercase border-b-2 w-full">Experience</h1>
                 <p className='sm:text-[20px] text-[15px]'>Here&apos;s a timeline of what I&apos;ve done so far:</p>
                 </div>
-
-            <div className='flex pl-10 pr-10 flex-col'>
+            </div>
+            <div className='flex p-4 flex-col'>
                 <VerticalTimeline>
                     {experiences.map((experience, index) => (
                         <ExperienceCard key={`experience-${index}`} experience={experience} />
                         ))}
                 </VerticalTimeline>
-            </div>
             </div>
             </section>
         </>
