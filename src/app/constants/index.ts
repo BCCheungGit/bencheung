@@ -16,7 +16,7 @@ import {
   instagram,
   github,
   C,
-  python
+  python,
 } from '../assets';
 
 
@@ -143,5 +143,41 @@ export const socials = [
     name: "Instagram",
     icon: instagram,
     url: "https://www.instagram.com/ben_cheungg/"
+  }
+]
+
+export const projects = [
+  {
+    title: "OCM Visitor Registration",
+    image: "",
+    date: "June 2024 - August 2024",
+    active_users: "~3000 active users per year",
+    points: [
+      "Next.js, Typescript, TailwindCSS, Supabase, Node.js"
+    ],
+    linkicon: github,
+    link: "https://github.com/BCCheungGit/OCM-Visitor-Registration"
+  },
+  {
+    title: "OCM Check-In System",
+    image: "",
+    date: "June 2023 - September 2023",
+    active_users: "~10000 active users per year",
+    points: [
+      "React, Firebase, Postgres, Node.js",
+    ],
+    linkicon: github,
+    link: "https://github.com/BCCheungGit/ocm-checkin-app"
+  },
+  {
+    title: "Weelrn Scripts",
+    image: "",
+    date: "February 2024 - July 2024",
+    active_users: "N/A",
+    points: [
+      "Python, Docker, Azure",
+    ],
+    linkicon: github,
+    link: "https://github.com/BCCheungGit/Weelrn",
   }
 ]

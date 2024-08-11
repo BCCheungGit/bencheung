@@ -17,6 +17,7 @@ import instagram from './instagram.png';
 import github from './github.png';
 import C from './C.png';
 import python from './python.png';
+import vercel from './vercel.svg';
 
 export { 
     ocm,
@@ -35,5 +36,6 @@ export {
     instagram,
     github,
     C,
-    python
+    python,
+    vercel
 }
