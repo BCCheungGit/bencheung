@@ -12,7 +12,7 @@ const About = () => {
             <section id="about" ></section>
             <section className="w-full h-full items-start mt-20 sm:p-20 p-10 sm:mt-0 flex md:flex-row flex-col md:gap-0 gap-5">
             <div className="w-full h-full flex md:flex-row flex-col md:gap-10 gap-2">
-                <div className="md:w-1/2 w-full sm:flex sm:flex-col hidden">
+                <div className="md:w-1/2 w-full lg:flex lg:flex-col hidden">
                     <div className="flex flex-row gap-0 items-center justify-center w-full h-full">
                         <Pool />
                         <Piano />
@@ -23,7 +23,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col md:w-1/2 w-full md:border-l-2 md:border-r-2 sm:p-8 p-0 rounded-xl">
+                <div className="flex flex-col lg:w-1/2 w-full lg:border-l-2 sm:p-8 p-0 rounded-xl">
                     <h1 className="sm:text-[30px] text-[20px] text-white uppercase border-b-2 w-full">About Me</h1>
                     <p className="mt-10">I&apos;m a sociable, quick-learning, curious thinker.</p>
                     <p className="mt-5">I mainly work in Python and Typescript/Javascript, but I am working to expand my language skillset with C. I am especially proficient with full-stack web development, but am always open to learning new skills!</p>
