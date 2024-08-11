@@ -11,7 +11,10 @@ import {
   typescript,
   react,
   tailwind,
-  nodejs
+  nodejs,
+  linkedin,
+  instagram,
+  github
 } from '../assets';
 
 
@@ -112,3 +115,21 @@ export const technologies = [{
   name: "Node.js",
   icon: nodejs
 }]
+
+export const socials = [
+{
+  name: "LinkedIn",
+  icon: linkedin,
+  url: "https://www.linkedin.com/in/benjamin-cheung-50b06b231/"
+},
+{
+  name: "Github",
+  icon: github,
+  url: "https://www.github.com/BCCheungGit"
+},
+{
+  name: "Instagram",
+  icon: instagram,
+  url: "https://www.instagram.com/ben_cheungg/"
+}
+]

@@ -12,6 +12,9 @@ import typescript from './typescript.png';
 import react from './reactjs.png';
 import tailwind from './tailwind.png';
 import nodejs from './nodejs.png';
+import linkedin from './linkedin.png';
+import instagram from './instagram.png';
+import github from './github.png';
 
 
 export { 
@@ -26,5 +29,8 @@ export {
     typescript,
     react,
     tailwind,
-    nodejs
+    nodejs,
+    linkedin,
+    instagram,
+    github
 }

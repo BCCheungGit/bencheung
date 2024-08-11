@@ -3,8 +3,7 @@
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import ScrollButton from "./ScrollButton";
-
-
+import { socials } from "../constants";
 
 const Hero = () => {
 
@@ -30,6 +29,21 @@ const Hero = () => {
           <p className="font-medium lg:text-[25px] sm:text-[20px] xs:text-[20px] text-[16px] lg:leading-[40px]">
             A computer science student at New York University
           </p>
+          <div className="flex flex-row gap-5 mt-5 ">
+            {socials.map((social, index) => (
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                key={`social-${index}`}
+                href={social.url}
+                target="_blank"
+                rel="noreferrer"
+                className="bg-white rounded-xl"
+              >
+                <img className="w-8 h-8" src={social.icon.src} />
+              </motion.a>
+            ))}
+          </div>
           <ScrollButton url="#about" text="Learn more" />
 
         </div>

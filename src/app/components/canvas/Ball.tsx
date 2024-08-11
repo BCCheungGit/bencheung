@@ -55,7 +55,7 @@ const BallCanvas = ({icon}: {icon: string}) => {
                     enableZoom={false} 
                     enableRotate={true}
                     
-                    rotateSpeed={0.4}/>
+                    rotateSpeed={0.2}/>
                 <Ball imgUrl={icon} />
             </Suspense>
         </Canvas>
