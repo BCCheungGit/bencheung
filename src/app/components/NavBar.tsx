@@ -55,7 +55,7 @@ const Navbar = () => {
                         onClick={() => {setToggle(!toggle)}}
                     />
                     </PopoverTrigger>
-            <PopoverContent>
+            <PopoverContent className="rounded-xl">
 
             <ul className='list-none flex justify-end items-start flex-col gap-4'>
           {navLinks.map((link) => (

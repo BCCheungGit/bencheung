@@ -153,7 +153,7 @@ export const projects = [
     date: "June 2024 - August 2024",
     active_users: "~3000 active users per year",
     points: [
-      "Next.js, Typescript, TailwindCSS, Supabase, Node.js"
+      "Next.js", "Typescript", "TailwindCSS", "Supabase", "Node.js"
     ],
     linkicon: github,
     link: "https://github.com/BCCheungGit/OCM-Visitor-Registration"
@@ -164,7 +164,7 @@ export const projects = [
     date: "June 2023 - September 2023",
     active_users: "~10000 active users per year",
     points: [
-      "React, Firebase, Postgres, Node.js",
+      "React", "Firebase", "Postgres", "Node.js",
     ],
     linkicon: github,
     link: "https://github.com/BCCheungGit/ocm-checkin-app"
@@ -175,7 +175,7 @@ export const projects = [
     date: "February 2024 - July 2024",
     active_users: "N/A",
     points: [
-      "Python, Docker, Azure",
+      "Python", "Docker", "Azure",
     ],
     linkicon: github,
     link: "https://github.com/BCCheungGit/Weelrn",

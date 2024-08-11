@@ -11,6 +11,7 @@ import {
 import { projects } from "../constants";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Separator } from "@/components/ui/separator";
 
 const Projects = () => {
   return (
@@ -28,7 +29,7 @@ const Projects = () => {
           <div className="flex flex-col lg:flex-row gap-10 w-full h-full">
             {projects.map((project, index) => (
               <div className="w-full h-full" key={`project-${index}`}>
-                <Card>
+                <Card className="rounded-xl">
                   <CardHeader>
                     <CardTitle className="flex flex-row justify-between items-center">
                       <div>{project.title}</div>
@@ -45,9 +46,9 @@ const Projects = () => {
                     </CardTitle>
                     <CardDescription>{project.date}</CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="flex flex-row gap-4">
                     {project.points.map((point, index) => (
-                      <p key={`point-${index}`}>{point}</p>
+                      <p key={`point-${index}`} className="flex flex-row gap-2">{point}</p>
                     ))}
                   </CardContent>
                   <CardFooter></CardFooter>
