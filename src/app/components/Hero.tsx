@@ -22,14 +22,14 @@ const Hero = () => {
   return (
     <section className="bg-background relative w-full h-screen mx-auto">
       <div className="sm:px-16 px-6 absolute inset-0 top-[120px] max-w-7xl mx-auto flex md:flex-row flex-col md:justify-between items-start gap-5">
-        <div className="flex flex-col justify-center items-start mt-5">
-          <h1 className="font-black text-white lg:text-[60px] sm:text-[40px] xs:text-[40px] text-[40px] lg:leading-[98px] md:mt-28 mt-0">
+        <div className="flex flex-col justify-center sm:items-start items-center w-full mt-5">
+          <h1 className="font-black sm:items-start text-white lg:text-[60px] sm:text-[40px] xs:text-[40px] text-[40px] lg:leading-[98px] md:mt-28 mt-0">
             Hello, I&apos;m Ben.
           </h1>
           <p className="font-medium lg:text-[25px] sm:text-[20px] xs:text-[20px] text-[16px] lg:leading-[40px]">
             A computer science student at New York University
           </p>
-          <div className="flex flex-row gap-5 mt-5 ">
+          <div className="flex flex-row w-full gap-5 mt-5 sm:items-start sm:justify-start items-center justify-center">
             {socials.map((social, index) => (
               <motion.a
                 whileHover={{ scale: 1.1 }}
