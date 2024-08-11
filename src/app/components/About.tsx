@@ -4,7 +4,7 @@ import { technologies } from "../constants";
 import BallCanvas from "./canvas/Ball";
 import Piano from "./canvas/Piano";
 import Pool from "./canvas/Pool";
-
+import Laptop from "./canvas/Laptop";
 
 const About = () => {
     return (
@@ -14,12 +14,11 @@ const About = () => {
             <div className="w-full h-full flex md:flex-row flex-col md:gap-10 gap-2">
                 <div className="md:w-1/2 w-full lg:flex lg:flex-col hidden">
                     <div className="flex flex-row gap-0 items-center justify-center w-full h-full">
-                        <Pool />
-                        <Piano />
+                        <Laptop />
                     </div>
-                    <div className="text-white text-[10px] mb-5">
-                        Above ground swimming pool by Poly by Google [CC-BY] via Poly Pizza <br />
-                        Piano by Bruno Oliveira [CC-BY] via Poly Pizza
+                    <div className="flex flex-col gap-4 justify-center items-center">
+                        <p className="text-white text-[25px] mb-5">Drag me around!</p>
+                        <p className="text-white text-[9px] mb-5">Laptop by Poly by Google [CC-BY] via Poly Pizza</p>
                     </div>
                 </div>
 
