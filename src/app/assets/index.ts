@@ -15,7 +15,8 @@ import nodejs from './nodejs.png';
 import linkedin from './linkedin.png';
 import instagram from './instagram.png';
 import github from './github.png';
-
+import C from './C.png';
+import python from './python.png';
 
 export { 
     ocm,
@@ -32,5 +33,7 @@ export {
     nodejs,
     linkedin,
     instagram,
-    github
+    github,
+    C,
+    python
 }

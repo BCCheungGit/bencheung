@@ -14,7 +14,9 @@ import {
   nodejs,
   linkedin,
   instagram,
-  github
+  github,
+  C,
+  python
 } from '../assets';
 
 
@@ -114,22 +116,32 @@ export const technologies = [{
 {
   name: "Node.js",
   icon: nodejs
-}]
+},
+{
+  name: "C",
+  icon: C
+},
+{
+  name: "Python",
+  icon: python
+}
+
+]
 
 export const socials = [
-{
-  name: "LinkedIn",
-  icon: linkedin,
-  url: "https://www.linkedin.com/in/benjamin-cheung-50b06b231/"
-},
-{
-  name: "Github",
-  icon: github,
-  url: "https://www.github.com/BCCheungGit"
-},
-{
-  name: "Instagram",
-  icon: instagram,
-  url: "https://www.instagram.com/ben_cheungg/"
-}
+  {
+    name: "LinkedIn",
+    icon: linkedin,
+    url: "https://www.linkedin.com/in/benjamin-cheung-50b06b231/"
+  },
+  {
+    name: "Github",
+    icon: github,
+    url: "https://www.github.com/BCCheungGit"
+  },
+  {
+    name: "Instagram",
+    icon: instagram,
+    url: "https://www.instagram.com/ben_cheungg/"
+  }
 ]
