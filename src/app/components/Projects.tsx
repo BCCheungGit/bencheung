@@ -46,9 +46,9 @@ const Projects = () => {
                     </CardTitle>
                     <CardDescription>{project.date}</CardDescription>
                   </CardHeader>
-                  <CardContent className="flex flex-row gap-4">
+                  <CardContent className="flex flex-row flex-wrap gap-4 object-contain">
                     {project.points.map((point, index) => (
-                      <p key={`point-${index}`} className="flex flex-row gap-2">{point}</p>
+                      <p key={`point-${index}`} className="flex flex-row gap-2 sm:text-[15px] text-[12px]">{point}</p>
                     ))}
                   </CardContent>
                   <CardFooter></CardFooter>
