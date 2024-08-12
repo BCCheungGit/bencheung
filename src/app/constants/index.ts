@@ -152,8 +152,8 @@ export const projects = [
   {
     title: "OCM Visitor Registration",
     image: ocm_visitors,
-    date: "June 2024 - August 2024",
-    active_users: "~3000 active users per year",
+    date: "Jun 2024 - Aug 2024",
+    active_users: "~3000 yearly active users",
     points: [
       "Next.js", "Typescript", "TailwindCSS", "Supabase", "Node.js"
     ],
@@ -163,8 +163,8 @@ export const projects = [
   {
     title: "OCM Check-In System",
     image: ocm_checkin,
-    date: "June 2023 - September 2023",
-    active_users: "~10000 active users per year",
+    date: "Jun 2023 - Sep 2023",
+    active_users: "~10000 yearly active users",
     points: [
       "React", "Firebase", "Postgres", "Node.js",
     ],
