@@ -31,14 +31,15 @@ const Projects = () => {
               <div className="w-full h-full" key={`project-${index}`}>
                 <Card className="rounded-xl">
                   <CardHeader>
-                    <CardTitle className="flex flex-row justify-between items-center">
-                      <div>{project.title}</div>
-                      <div>
+                    <CardTitle className="flex flex-row justify-between items-start">
+                      <div className="pr-2">{project.title}</div>
+                      <div className="flex-shrink-0">
                         <Link href={project.link}>
-                          <Button className="bg-primary hover:bg-slate-400 rounded-xl">
+                          <Button className="bg-primary hover:bg-slate-400 rounded-xl p-1 h-fit sm:p-2">
                             <img
-                              className="w-7 h-7"
+                              className="w-4 h-4 sm:w-7 sm:h-7"
                               src={project.linkicon.src}
+                              alt="GitHub"
                             />
                           </Button>
                         </Link>
