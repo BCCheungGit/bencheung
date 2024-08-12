@@ -21,7 +21,7 @@ const Projects = () => {
       <section>
         <div className="flex flex-col w-full h-full p-10 gap-10 mt-20">
           <div className="flex flex-col w-full items-start justify-center md:gap-10 gap-2">
-            <h1 className="sm:text-[30px] text-[20px] text-white uppercase border-b-2 w-full">
+            <h1 className="sm:text-[30px] tracking-wider text-[20px] text-white uppercase border-b-2 w-full">
               Projects.
             </h1>
             <p className="sm:text-[20px] text-[15px]">Outside of school, I've furthered my learning with:</p>
@@ -55,7 +55,7 @@ const Projects = () => {
                         </Link>
                       </div>
                     </CardTitle>
-                    <CardDescription className="flex flex-row justify-between sm:text-[15px] text-[10px]"><div>{project.date}</div> <div>{project.active_users}</div></CardDescription>
+                    <CardDescription className="flex flex-row justify-between sm:text-[15px] text-[10px]"><span>{project.date}</span> <span>{project.active_users}</span></CardDescription>
                   </CardHeader>
                   <CardContent className="flex flex-row flex-wrap gap-4 object-contain">
                     {project.points.map((point, index) => (

@@ -65,7 +65,7 @@ const Contact = () => {
             <section>
                 <div className="w-full flex flex-col p-10 mt-20 ">
                     <div className="flex flex-col w-full items-start justify-center md:gap-10 gap-8">
-                        <h1 className="sm:text-[30px] text-[20px] uppercase border-b-2 w-full text-white">Contact.</h1>
+                        <h1 className="sm:text-[30px] text-[20px] uppercase border-b-2 w-full text-white tracking-wider">Contact.</h1>
                         <div className="flex flex-col w-full h-full items-center justify-center">
                             <motion.div
                                 variants={{
