@@ -8,6 +8,8 @@ import { motion } from "framer-motion";
 import { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import StarsCanvas from "./canvas/Stars";
+import { navLinks } from "../constants";
+import { Copyright } from 'lucide-react';
 
 const Contact = () => {
     const formRef = useRef<HTMLFormElement>(null);
@@ -53,14 +55,15 @@ const Contact = () => {
         })
     }
 
-
+    const [toggle, setToggle] = useState<boolean>(false);
+    const [active, setActive] = useState<string>("");
 
     return (
         <>
             <section id="contact"></section>
-            
+
             <section>
-                <div className="w-full h-screen flex flex-col p-10 mt-20">
+                <div className="w-full flex flex-col p-10 mt-20 ">
                     <div className="flex flex-col w-full items-start justify-center md:gap-10 gap-8">
                         <h1 className="sm:text-[30px] text-[20px] uppercase border-b-2 w-full text-white">Contact</h1>
                         <div className="flex flex-col w-full h-full items-center justify-center">
@@ -96,9 +99,28 @@ const Contact = () => {
                             </motion.div>
                         </div>
                     </div>
-
+       
                 </div>
-
+                <nav className="bg-background  py-20 px-6 w-full lg:flex hidden items-center justify-center bottom-0 z-20 border-t-2">
+                     <div className="w-full flex justify-center items-center">
+                        <div className="mr-80 flex flex-row items-center justify-center gap-1 text-[12px]"><Copyright size={16} />Ben Cheung.</div>
+                     <ul className="list-none hidden sm:flex flex-row gap-10">
+                {navLinks.map((link) => (
+                <li
+                key={link.id}
+                className={`${
+                active === link.title 
+                 ? 'text-slate-400'
+                 : 'text-primary'
+              } hover:text-slate-400 text-[18px] font-medium cursor-pointer`} 
+              onClick={() => setActive(link.title)}
+            >
+              <a href={`#${link.id}`}>{link.title}</a>
+            </li>
+          ))}
+                </ul>
+                     </div>           
+                </nav>  
             </section>
         </>
     )
