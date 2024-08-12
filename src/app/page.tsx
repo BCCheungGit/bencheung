@@ -1,4 +1,5 @@
 import About from "./components/About";
+import StarsCanvas from "./components/canvas/Stars";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
@@ -18,7 +19,10 @@ export default function Home() {
       <About />
       <Experience />
       <Projects />
-      <Contact />
+      <div className="relative z-0">
+        <Contact />
+        <StarsCanvas />
+      </div>
       </div>
 
   );
