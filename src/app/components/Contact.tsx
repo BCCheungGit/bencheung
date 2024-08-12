@@ -10,9 +10,15 @@ import emailjs from '@emailjs/browser';
 import StarsCanvas from "./canvas/Stars";
 import { navLinks } from "../constants";
 import { Copyright } from 'lucide-react';
+import { useToast } from "@/components/ui/use-toast"
 
 const Contact = () => {
     const formRef = useRef<HTMLFormElement>(null);
+    const { toast } = useToast();
+    
+    const [active, setActive] = useState<string>("");
+    const [loading, setLoading] = useState<boolean>(false);
+
 
     const [form, setForm] = useState({
         name: "",
@@ -31,6 +37,7 @@ const Contact = () => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        setLoading(true);
         emailjs.send(
             process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "", 
             process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "", 
@@ -43,20 +50,27 @@ const Contact = () => {
             },
             process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ""
         ).then(() => {
-            alert("Message sent successfully!")
+            setLoading(false);
+            toast({
+                title: "Message Sent!",
+                description: "I'll get back to you as soon as I can."
+            })
             setForm({
                 name: "",
                 email: "",
                 message: "",
             })
         }, (error) => {
+            setLoading(false);
             console.log(error);
-            alert("Something went wrong")
+            toast({
+                title: "Error!",
+                description: "There was an error sending your message. Please try again later.",
+                variant: "destructive"
+            })
         })
     }
 
-    const [toggle, setToggle] = useState<boolean>(false);
-    const [active, setActive] = useState<string>("");
 
     return (
         <>
@@ -92,7 +106,7 @@ const Contact = () => {
                                         <Textarea name="message" rows={7} value={form.message} onChange={handleChange} className="w-full rounded-xl" />
                                     </label>
                                     <Button type="submit" className="flex h-10 w-full rounded-xl text-white hover:text-slate-400 hover:bg-background border border-input bg-background px-3 py-2 text-sm ring-offset-background ">
-                                        Send Message
+                                        {loading ? "Sending..." : "Send Message"}
                                     </Button>
                                 </form>
 

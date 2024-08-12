@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import { Poppins } from "next/font/google";
+import { Toaster } from "@/components/ui/toaster";
 
 
 const poppins = Poppins( {
@@ -24,7 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark scrollbar-hide" style={{scrollBehavior: 'smooth'}}>
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>{children}
+
+        <Toaster />
+      </body>
+
     </html>
   );
 }
