@@ -24,7 +24,7 @@ const Projects = () => {
             <h1 className="sm:text-[30px] tracking-wider text-[20px] text-white uppercase border-b-2 w-full">
               Projects.
             </h1>
-            <p className="sm:text-[20px] text-[15px]">Outside of school, I've furthered my learning with:</p>
+            <p className="sm:text-[20px] text-[15px]">Outside of school, I&apos;ve furthered my learning with:</p>
           </div>
 
           <motion.div 
