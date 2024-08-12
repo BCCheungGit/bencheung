@@ -70,7 +70,7 @@ const Contact = () => {
                             <motion.div
                                 variants={{
                                     hidden: { x: -100, opacity: 0 },
-                                    show: { x: 0, opacity: 1, transition: { type: "tween", delay: 0.2, duration: 1, ease: "easeOut" } },
+                                    show: { x: 0, opacity: 1, transition: { type: "tween", delay: 0.2, duration: 1.5, ease: "easeOut" } },
                                 }}
                                 initial="hidden"
                                 whileInView="show"

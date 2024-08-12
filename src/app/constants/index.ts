@@ -17,6 +17,8 @@ import {
   github,
   C,
   python,
+  ocm_visitors,
+  ocm_checkin
 } from '../assets';
 
 
@@ -149,7 +151,7 @@ export const socials = [
 export const projects = [
   {
     title: "OCM Visitor Registration",
-    image: "",
+    image: ocm_visitors,
     date: "June 2024 - August 2024",
     active_users: "~3000 active users per year",
     points: [
@@ -160,7 +162,7 @@ export const projects = [
   },
   {
     title: "OCM Check-In System",
-    image: "",
+    image: ocm_checkin,
     date: "June 2023 - September 2023",
     active_users: "~10000 active users per year",
     points: [
@@ -169,15 +171,4 @@ export const projects = [
     linkicon: github,
     link: "https://github.com/BCCheungGit/ocm-checkin-app"
   },
-  {
-    title: "Weelrn Scripts",
-    image: "",
-    date: "February 2024 - July 2024",
-    active_users: "N/A",
-    points: [
-      "Python", "Docker", "Azure",
-    ],
-    linkicon: github,
-    link: "https://github.com/BCCheungGit/Weelrn",
-  }
 ]

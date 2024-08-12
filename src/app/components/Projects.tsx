@@ -12,6 +12,7 @@ import { projects } from "../constants";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
@@ -26,7 +27,16 @@ const Projects = () => {
             <p className="sm:text-[20px] text-[15px]">My most recent works</p>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-10 w-full h-full">
+          <motion.div 
+            className="flex flex-col lg:flex-row gap-10 w-full h-full"
+            variants={{
+              hidden: { x: 200, opacity: 0 },
+              show: { x: 0, opacity: 1, transition: { type: "tween", delay: 0.2, duration: 1.5, ease: "easeOut" } },
+            }}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            >
             {projects.map((project, index) => (
               <div className="w-full h-full" key={`project-${index}`}>
                 <Card className="rounded-xl">
@@ -52,11 +62,13 @@ const Projects = () => {
                       <p key={`point-${index}`} className="flex flex-row gap-2 sm:text-[15px] text-[12px]">{point}</p>
                     ))}
                   </CardContent>
-                  <CardFooter></CardFooter>
+                  <CardFooter>
+                    <img src={project.image.src} className="w-full" />
+                  </CardFooter>
                 </Card>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
     </>

@@ -18,6 +18,8 @@ import github from './github.png';
 import C from './C.png';
 import python from './python.png';
 import vercel from './vercel.svg';
+import ocm_visitors from './ocm_visitors.png';
+import ocm_checkin from './ocm_checkin.png';
 
 export { 
     ocm,
@@ -37,5 +39,7 @@ export {
     github,
     C,
     python,
-    vercel
+    vercel,
+    ocm_visitors,
+    ocm_checkin
 }
