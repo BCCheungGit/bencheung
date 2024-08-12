@@ -86,7 +86,7 @@ const Experience = () => {
         <section>
             <div className='flex flex-col w-full gap-10 pl-10 pr-10 pt-10 mt-20'>
                 <div className='flex flex-col w-full items-start justify-start md:gap-10 gap-2'>
-                <h1 className="sm:text-[30px] text-[20px] text-white uppercase border-b-2 w-full">Experience</h1>
+                <h1 className="sm:text-[30px] text-[20px] text-white uppercase border-b-2 w-full">Experience.</h1>
                 <p className='sm:text-[20px] text-[15px]'>Here&apos;s a timeline of what I&apos;ve done so far:</p>
                 </div>
             </div>

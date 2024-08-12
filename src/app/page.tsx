@@ -21,7 +21,9 @@ export default function Home() {
       <Projects />
       <div className="relative z-0">
         <Contact />
+        <div className="sm:inline hidden">
         <StarsCanvas />
+        </div>
       </div>
       </div>
 
