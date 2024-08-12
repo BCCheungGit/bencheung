@@ -24,7 +24,7 @@ const Projects = () => {
             <h1 className="sm:text-[30px] text-[20px] text-white uppercase border-b-2 w-full">
               Projects.
             </h1>
-            <p className="sm:text-[20px] text-[15px]">My most recent works</p>
+            <p className="sm:text-[20px] text-[15px]">Outside of school, I've furthered my learning with:</p>
           </div>
 
           <motion.div 
@@ -41,7 +41,7 @@ const Projects = () => {
               <div className="w-full h-full" key={`project-${index}`}>
                 <Card className="rounded-xl">
                   <CardHeader>
-                    <CardTitle className="flex flex-row justify-between items-start">
+                    <CardTitle className="flex flex-row justify-between items-start md:text-[30px] text-[20px]">
                       <div className="pr-2">{project.title}</div>
                       <div className="flex-shrink-0">
                         <Link href={project.link}>
@@ -55,7 +55,7 @@ const Projects = () => {
                         </Link>
                       </div>
                     </CardTitle>
-                    <CardDescription>{project.date}</CardDescription>
+                    <CardDescription className="flex flex-row justify-between sm:text-[15px] text-[10px]"><div>{project.date}</div> <div>{project.active_users}</div></CardDescription>
                   </CardHeader>
                   <CardContent className="flex flex-row flex-wrap gap-4 object-contain">
                     {project.points.map((point, index) => (
