@@ -15,7 +15,7 @@ interface StarsProps {
 
 const Stars = (props: StarsProps) => {
   const ref = useRef(null);
-  const [sphere] = useState<Float32Array>(() => random.inSphere(new Float32Array(2000), { radius: 1.2 }) as Float32Array);
+  const [sphere] = useState<Float32Array>(() => random.inSphere(new Float32Array(3000), { radius: 1.2 }) as Float32Array);
 
   useFrame((state, delta) => {
     if (ref.current) {
