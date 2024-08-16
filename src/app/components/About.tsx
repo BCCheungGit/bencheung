@@ -26,7 +26,7 @@ const About = () => {
                     <h1 className="sm:text-[30px] text-[20px] text-white uppercase border-b-2 w-full tracking-wider">About Me.</h1>
                     <p className="mt-10">I am a sociable, quick-learning, curious thinker.</p>
                     <p className="mt-5">I mainly work with Python and Typescript/Javascript, but I am working to expand my language skillset with C. I am especially proficient with full-stack web development, but am always open to learning new skills.</p>
-                    <p className="mt-5">In terms of non-tech related things, I enjoy swimming and playing the piano!</p>
+                    <p className="mt-5">When I am not coding, I enjoy swimming and playing the piano!</p>
                 </div>
                 </div>
             </section>
