@@ -32,8 +32,8 @@ const Hero = () => {
           <div className="flex flex-row w-full gap-5 mt-5 sm:items-start sm:justify-start items-center justify-center">
             {socials.map((social, index) => (
               <motion.a
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.8 }}
                 key={`social-${index}`}
                 href={social.url}
                 target="_blank"
