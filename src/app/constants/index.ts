@@ -50,16 +50,18 @@ export const navLinks = [
 
 export const experiences = [
   {
-    title: "Instructor",
-    company_name: "Code Ninjas (New York)",
-    icon: codeninjas,
+    title: "Data Science Intern",
+    company_name: "Weelrn (Shanghai, remote)",
+    icon: weelrn_logo,
     iconBg: "#FFFFFF",
-    date: "February 2021 - August 2022",
+    date: "February 2024 - July 2024",
     points: [
-      "Taught young adults aged 7-14 the basic principles of coding languages such as Python, JavaScript, HTML, CSS, and Java. ",
-      "Provided guidance and support to students as they worked through coding challenges and projects.",
+      "Led a team of six students to write Python scripts to run automated AI-generated learning cycles, containerized with Docker and deployed on the Cloud.",
+      "Extracted data and performed analysis to quantify student interactions. ",
+      "Organized weekly meetings and presentations. ",
     ]
   },
+  
   {
     title: "Software Engineer Intern",
     company_name: "Kulla (Shanghai, remote)",
@@ -73,17 +75,16 @@ export const experiences = [
     ]
   },
   {
-    title: "Data Science Intern",
-    company_name: "Weelrn (Shanghai, remote)",
-    icon: weelrn_logo,
+    title: "Instructor",
+    company_name: "Code Ninjas (New York)",
+    icon: codeninjas,
     iconBg: "#FFFFFF",
-    date: "February 2024 - July 2024",
+    date: "February 2021 - August 2022",
     points: [
-      "Led a team of six students to write Python scripts to run automated AI-generated learning cycles, containerized with Docker and deployed on the Cloud.",
-      "Extracted data and performed analysis to quantify student interactions. ",
-      "Organized weekly meetings and presentations. ",
+      "Taught young adults aged 7-14 the basic principles of coding languages such as Python, JavaScript, HTML, CSS, and Java. ",
+      "Provided guidance and support to students as they worked through coding challenges and projects.",
     ]
-  }
+  },
 ]
 
 
