@@ -18,7 +18,8 @@ import {
   C,
   python,
   ocm_visitors,
-  ocm_checkin
+  ocm_checkin,
+  java,
 } from '../assets';
 
 
@@ -122,11 +123,15 @@ export const technologies = [{
 },
 {
   name: "C",
-  icon: C
+  icon: C,
 },
 {
   name: "Python",
-  icon: python
+  icon: python,
+}, 
+{
+  name: "Java",
+  icon: java,
 }
 
 ]

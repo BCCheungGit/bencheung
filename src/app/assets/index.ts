@@ -20,6 +20,7 @@ import python from './python.png';
 import vercel from './vercel.svg';
 import ocm_visitors from './ocm_visitors.png';
 import ocm_checkin from './ocm_checkin.png';
+import java from './java.png';
 
 export { 
     ocm,
@@ -41,5 +42,6 @@ export {
     python,
     vercel,
     ocm_visitors,
-    ocm_checkin
+    ocm_checkin,
+    java,
 }
