@@ -89,30 +89,38 @@ export const experiences = [
 ]
 
 
-export const technologies = [{
-  name: "Docker",
-  icon: docker
-},
-{
+export const technologies = [
+  {
+    name: "JavaScript",
+    icon: javascript
+  },
+  {
+    name: "TypeScript",
+    icon: typescript
+  },
+  {
+    name: "React",
+    icon: react
+  },
+  {
+    name: "Python",
+    icon: python,
+  }, 
+  
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "HTML",
+    icon: html
+  },
+  {
   name: "CSS",
   icon: css
 },
-{
-  name: "HTML",
-  icon: html
-},
-{
-  name: "JavaScript",
-  icon: javascript
-},
-{
-  name: "TypeScript",
-  icon: typescript
-},
-{
-  name: "React",
-  icon: react
-},
+
+
 {
   name: "Tailwind",
   icon: tailwind
@@ -125,14 +133,11 @@ export const technologies = [{
   name: "C",
   icon: C,
 },
+
 {
-  name: "Python",
-  icon: python,
-}, 
-{
-  name: "Java",
-  icon: java,
-}
+  name: "Docker",
+  icon: docker
+},
 
 ]
 
