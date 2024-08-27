@@ -64,7 +64,7 @@ export const experiences = [
   },
   
   {
-    title: "Software Engineer Intern",
+    title: "Frontend Software Engineer Intern",
     company_name: "Kulla (Shanghai, remote)",
     icon: purplek,
     iconBg: "#FFFFFF",
