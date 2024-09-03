@@ -6,6 +6,12 @@ import ScrollButton from "./ScrollButton";
 import { socials } from "../constants";
 import SocialsBallCanvas from "./canvas/SocialsBall";
 
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card"
+
 const Hero = () => {
 
     const tiltOptions = {
@@ -39,17 +45,27 @@ const Hero = () => {
               </div>
             ))} */}
             {socials.map((social, index) => (
+            <HoverCard
+            key={`social-${index}`}>
               <motion.a
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.8 }}
-                key={`social-${index}`}
                 href={social.url}
                 target="_blank"
                 rel="noreferrer"
                 className="bg-white rounded-xl"
               >
+                <HoverCardTrigger>
                 <img className="w-8 h-8" src={social.icon.src} />
+                </HoverCardTrigger>
               </motion.a>
+              <HoverCardContent className="w-80">
+                <div className="flex justify-between space-x-4">
+                  
+                </div>
+                {social.name}
+              </HoverCardContent>
+              </HoverCard>
             ))}
           </div>
           <ScrollButton url="#about" text="Learn more" />
