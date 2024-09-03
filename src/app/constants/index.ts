@@ -145,17 +145,20 @@ export const socials = [
   {
     name: "LinkedIn",
     icon: linkedin,
-    url: "https://www.linkedin.com/in/benjamin-cheung-50b06b231/"
+    url: "https://www.linkedin.com/in/benjamin-cheung-50b06b231/",
+    username: "@Benjamin Cheung"
   },
   {
     name: "Github",
     icon: github,
-    url: "https://www.github.com/BCCheungGit"
+    url: "https://www.github.com/BCCheungGit",
+    username: "@BCCheungGit"
   },
   {
     name: "Instagram",
     icon: instagram,
-    url: "https://www.instagram.com/ben_cheungg/"
+    url: "https://www.instagram.com/ben_cheungg/",
+    username: "@ben_cheungg"
   }
 ]
 

@@ -11,6 +11,9 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Hero = () => {
 
@@ -46,24 +49,35 @@ const Hero = () => {
             ))} */}
             {socials.map((social, index) => (
             <HoverCard
-            key={`social-${index}`}>
-              <motion.a
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.8 }}
-                href={social.url}
-                target="_blank"
-                rel="noreferrer"
-                className="bg-white rounded-xl"
-              >
-                <HoverCardTrigger>
-                <img className="w-8 h-8" src={social.icon.src} />
+            key={`social-${index}`}
+            openDelay={100}
+            closeDelay={100}
+            >
+                <HoverCardTrigger asChild>
+                <Button variant="link" className="w-16 h-16 p-0" asChild>
+                  <a target="_blank" href={social.url}>
+                <img className="w-10 h-10 bg-white rounded-xl hover:w-12 hover:h-12" src={social.icon.src} />
+                </a>
+                </Button>
                 </HoverCardTrigger>
-              </motion.a>
               <HoverCardContent className="w-80">
-                <div className="flex justify-between space-x-4">
-                  
-                </div>
-                {social.name}
+                <div className="flex flex-row justify-between space-x-4">
+                  <Avatar className="bg-white">
+                    <AvatarImage src={social.icon.src} alt={social.name} />
+                    <AvatarFallback>{social.name}</AvatarFallback>
+                  </Avatar>
+                  <div className="space-y-1">
+                  <h4 className="text-sm font-semibold">{social.username}</h4>
+            <p className="text-sm">
+              Click to visit my {social.name} profile
+            </p>
+            <div className="flex items-center">
+              <span className="text-xs text-muted-foreground">
+                The link will open in a new tab
+              </span>
+            </div>
+          </div>
+        </div>
               </HoverCardContent>
               </HoverCard>
             ))}
