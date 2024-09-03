@@ -11,11 +11,11 @@ const LaptopModel = () => {
     const objRef = useRef<THREE.Object3D>();
     const obj = useLoader(GLTFLoader, 'laptop/laptop.gltf');
 
-    // useFrame((state, delta) => {
-    //   if (objRef.current) {
-    //     objRef.current.rotation.y += delta * 0.3;
-    //   }
-    // });
+    useFrame((state, delta) => {
+      if (objRef.current) {
+        objRef.current.rotation.y += delta * 0.1;
+      }
+    });
   
     return <primitive object={obj.scene} ref={objRef} scale={[1.5, 1.5, 1.5]} position={[0, 0, 0]} rotation={[0.3, 1, 0]} />;
 };

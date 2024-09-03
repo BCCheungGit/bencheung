@@ -30,15 +30,15 @@ const Hero = () => {
           <p className="font-medium lg:text-[25px] sm:text-[20px] xs:text-[20px] text-[16px] lg:leading-[40px]">
             A computer science student at New York University
           </p>
-          <div className="flex flex-row w-full gap-5 mt-2 items-center justify-center">
-            {socials.map((social, index) => (
+          <div className="flex flex-row w-full gap-5 mt-4 sm:items-start sm:justify-start items-center justify-center">
+            {/* {socials.map((social, index) => (
               <div className="w-20 h-20 sm:w-40 sm:h-40 flex flex-col justify-center items-center" key={`social-${index}`}>
                 <a href={social.url}>
                   <SocialsBallCanvas icon={social.icon.src} />
                 </a>
               </div>
-            ))}
-            {/* {socials.map((social, index) => (
+            ))} */}
+            {socials.map((social, index) => (
               <motion.a
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.8 }}
@@ -50,7 +50,7 @@ const Hero = () => {
               >
                 <img className="w-8 h-8" src={social.icon.src} />
               </motion.a>
-            ))} */}
+            ))}
           </div>
           <ScrollButton url="#about" text="Learn more" />
 

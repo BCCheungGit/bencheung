@@ -2,9 +2,7 @@
 "use client";
 
 import { useRef, Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
-
-
+import { Canvas, useFrame } from '@react-three/fiber';
 
 import {
     Decal,
@@ -21,10 +19,14 @@ interface BallProps {
 
 const SocialsBall: React.FC<BallProps> = (props) => {
     const [decal] = useTexture([props.imgUrl]);
-    const ballRef = useRef<THREE.Object3D>();
+    const ballRef = useRef<THREE.Group>(null);
+
+
+
+
 
     return (
-        <Float speed={1.75} rotationIntensity={0.5} floatIntensity={2}>
+        <Float speed={1.75} rotationIntensity={0.5} floatIntensity={2} ref={ballRef}>
             <ambientLight intensity={0.5} />
             <directionalLight position={[0, 0, 0.05]} intensity={1} />
             <mesh castShadow receiveShadow scale={1.5}>
