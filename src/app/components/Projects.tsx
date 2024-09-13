@@ -44,7 +44,7 @@ const Projects = () => {
                     <CardTitle className="flex flex-row justify-between items-start md:text-[30px] text-[20px]">
                       <div className="pr-2">{project.title}</div>
                       <div className="flex-shrink-0">
-                        <Link href={project.link}>
+                        <Link target="_blank" href={project.link}>
                           <Button className="bg-primary hover:bg-slate-400 rounded-xl p-1 h-fit sm:p-2">
                             <img
                               className="w-4 h-4 sm:w-7 sm:h-7"
