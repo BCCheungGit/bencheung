@@ -30,8 +30,8 @@ const Projects = () => {
           <motion.div 
             className="flex flex-col lg:flex-row gap-10 w-full h-full"
             variants={{
-              hidden: { x: 200, opacity: 0 },
-              show: { x: 0, opacity: 1, transition: { type: "tween", delay: 0.2, duration: 1.5, ease: "easeOut" } },
+              hidden: {scale:0.2, opacity: 0 },
+              show: { x: 0, scale: 1, opacity: 1, transition: { type: "tween", delay: 0.2, duration: 1.5, ease: "easeOut" } },
             }}
             initial="hidden"
             whileInView="show"
