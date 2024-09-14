@@ -10,7 +10,6 @@ import {
     PopoverTrigger,
   } from "@/components/ui/popover"
 import ScrollProgressBar from "./ScrollProgressBar";
-  
 
 const Navbar = () => {
     const [toggle, setToggle] = useState<boolean>(false);

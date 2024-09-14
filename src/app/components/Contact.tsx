@@ -11,7 +11,7 @@ import StarsCanvas from "./canvas/Stars";
 import { navLinks } from "../constants";
 import { Copyright } from 'lucide-react';
 import { useToast } from "@/components/ui/use-toast"
-
+import { ConfettiButton } from "@/components/magicui/confetti";
 const Contact = () => {
     const formRef = useRef<HTMLFormElement>(null);
     const { toast } = useToast();
@@ -117,9 +117,9 @@ const Contact = () => {
                                         <span className="text-white font-medium whitespace-nowrap">Message</span>
                                         <Textarea name="message" rows={7} value={form.message} onChange={handleChange} className="w-full rounded-xl" />
                                     </label>
-                                    <Button type="submit" className="flex h-10 w-full rounded-xl text-white hover:text-slate-400 hover:bg-background border border-input bg-background px-3 py-2 text-sm ring-offset-background ">
+                                    <ConfettiButton type="submit" className="flex h-10 w-full rounded-xl text-white hover:text-slate-400 hover:bg-background border border-input bg-background px-3 py-2 text-sm ring-offset-background ">
                                         {loading ? "Sending..." : "Send Message"}
-                                    </Button>
+                                    </ConfettiButton>
                                 </form>
 
                             </motion.div>
