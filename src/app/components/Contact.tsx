@@ -37,6 +37,18 @@ const Contact = () => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+
+        if (!form.name || !form.email || !form.message) {
+            toast({
+                title: "Error!",
+                description: "Please fill out all fields.",
+                variant: "destructive"
+            })
+            return;
+        }
+
+
+
         setLoading(true);
         emailjs.send(
             process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "", 
