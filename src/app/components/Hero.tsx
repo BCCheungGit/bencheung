@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import ScrollButton from "./ScrollButton";
 import { socials } from "../constants";
 import SocialsBallCanvas from "./canvas/SocialsBall";
-
+import BlurFade from "@/components/magicui/blur-fade";
 import {
   HoverCard,
   HoverCardContent,
@@ -33,12 +33,16 @@ const Hero = () => {
     <section className="bg-background relative w-full h-screen mx-auto">
       <div className="sm:px-16 px-6 absolute inset-0 top-[120px] max-w-7xl mx-auto flex md:flex-row flex-col md:justify-between items-start gap-5">
         <div className="flex flex-col justify-center sm:items-start items-center w-full mt-5">
+          <BlurFade delay={0.25} inView>
           <h1 className="font-black sm:items-start text-white lg:text-[60px] sm:text-[40px] xs:text-[40px] text-[40px] lg:leading-[98px] md:mt-28 mt-0">
             Hello, I&apos;m Ben.
           </h1>
+          </BlurFade>
+          <BlurFade delay={1.25} inView>
           <p className="font-medium lg:text-[25px] sm:text-[20px] xs:text-[20px] text-[16px] lg:leading-[40px]">
             A computer science student at New York University, class of 2026
           </p>
+          </BlurFade>
           <div className="flex flex-row w-full gap-5 mt-4 sm:items-start sm:justify-start items-center justify-center">
             {/* {socials.map((social, index) => (
               <div className="w-20 h-20 sm:w-40 sm:h-40 flex flex-col justify-center items-center" key={`social-${index}`}>
@@ -47,6 +51,7 @@ const Hero = () => {
                 </a>
               </div>
             ))} */}
+            <BlurFade delay={2} inView>
             {socials.map((social, index) => (
             <HoverCard
             key={`social-${index}`}
@@ -81,15 +86,18 @@ const Hero = () => {
               </HoverCardContent>
               </HoverCard>
             ))}
+            </BlurFade>
           </div>
           <ScrollButton url="#about" text="Learn more" />
 
         </div>
+        <BlurFade delay={1.25} inView>
         <Tilt options={tiltOptions}>
         <div className="md:w-[500px] w-fit">
           <img className="rounded-xl" src="/profilepic.jpg" />
         </div>
         </Tilt>
+        </BlurFade>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-
+import BlurFade from "@/components/magicui/blur-fade";
 
 interface ScrollButtonProps {
     url: string,
@@ -12,6 +12,7 @@ const ScrollButton: React.FC<ScrollButtonProps> = ({url, text}) => {
 
     return (
         <div className="w-full justify-center items-center mt-20 sm:flex hidden">
+          <BlurFade delay={3} inView>
         <a href={url}>
           <div className="flex flex-row gap-4 items-center">
           <div className="lg:flex hidden">
@@ -35,7 +36,7 @@ const ScrollButton: React.FC<ScrollButtonProps> = ({url, text}) => {
           </div>   
 
         </a>
-
+        </BlurFade>
       </div>
     )
 }
