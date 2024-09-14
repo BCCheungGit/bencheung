@@ -37,7 +37,7 @@ const Hero = () => {
             Hello, I&apos;m Ben.
           </h1>
           <p className="font-medium lg:text-[25px] sm:text-[20px] xs:text-[20px] text-[16px] lg:leading-[40px]">
-            A computer science student at New York University
+            A computer science student at New York University, class of 2026
           </p>
           <div className="flex flex-row w-full gap-5 mt-4 sm:items-start sm:justify-start items-center justify-center">
             {/* {socials.map((social, index) => (
