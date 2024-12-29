@@ -51,7 +51,7 @@ const Hero = () => {
                 </a>
               </div>
             ))} */}
-            <BlurFade delay={2} inView>
+            <BlurFade delay={2.25} inView>
             {socials.map((social, index) => (
             <HoverCard
             key={`social-${index}`}

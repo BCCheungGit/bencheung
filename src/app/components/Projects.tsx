@@ -31,7 +31,7 @@ const Projects = () => {
             className="flex flex-col lg:flex-row gap-10 w-full h-full"
             variants={{
               hidden: {scale:0.2, opacity: 0 },
-              show: { x: 0, scale: 1, opacity: 1, transition: { type: "tween", delay: 0.2, duration: 1.5, ease: "easeOut" } },
+              show: { x: 0, scale: 1, opacity: 1, transition: { type: "tween", delay: 0.1, duration: 1, ease: "easeOut" } },
             }}
             initial="hidden"
             whileInView="show"
@@ -39,7 +39,7 @@ const Projects = () => {
             >
             {projects.map((project, index) => (
               <div className="w-full h-full" key={`project-${index}`}>
-                <Card className="rounded-xl">
+                <Card className="rounded-xl h-[370px] md:h-[470px]">
                   <CardHeader>
                     <CardTitle className="flex flex-row justify-between items-start md:text-[30px] text-[20px]">
                       <div className="pr-2">{project.title}</div>

@@ -20,6 +20,7 @@ import {
   ocm_visitors,
   ocm_checkin,
   java,
+  tasky,
 } from '../assets';
 
 
@@ -184,5 +185,16 @@ export const projects = [
     ],
     linkicon: github,
     link: "https://github.com/BCCheungGit/ocm-checkin-app"
+  },
+  {
+    title: "Tasky",
+    image: tasky,
+    date: "November 2024 - December 2024",
+    active_users: "0",
+    points: [
+      "Next.js", "Typescript", "TailwindCSS", "MongoDB", "Node.js"
+    ],
+    linkicon: github,
+    link: "https://github.com/BCCheungGit/Tasky"
   },
 ]

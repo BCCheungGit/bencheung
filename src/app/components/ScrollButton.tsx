@@ -12,7 +12,7 @@ const ScrollButton: React.FC<ScrollButtonProps> = ({url, text}) => {
 
     return (
         <div className="w-full justify-center items-center mt-20 sm:flex hidden">
-          <BlurFade delay={3} inView>
+          <BlurFade delay={3.25} inView>
         <a href={url}>
           <div className="flex flex-row gap-4 items-center">
           <div className="lg:flex hidden">
