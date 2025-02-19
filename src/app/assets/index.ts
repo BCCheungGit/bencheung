@@ -22,6 +22,7 @@ import ocm_visitors from './ocm_visitors.png';
 import ocm_checkin from './ocm_checkin.png';
 import java from './java.png';
 import tasky from './tasky.png'
+import amazon from './amazon.jpg';
 
 export { 
     ocm,
@@ -46,4 +47,5 @@ export {
     ocm_checkin,
     java,
     tasky,
+    amazon,
 }

@@ -21,6 +21,7 @@ import {
   ocm_checkin,
   java,
   tasky,
+  amazon
 } from '../assets';
 
 
@@ -51,6 +52,16 @@ export const navLinks = [
 
 
 export const experiences = [
+  {
+    title: "Software Development Engineer Intern",
+    company_name: "Amazon (New York, New York)",
+    icon: amazon,
+    iconBg: "#FFFFFF",
+    date: "May 2025 - August 2025",
+    points: [
+      "Incoming intern for the summer of 2025.",
+    ]
+  },
   {
     title: "Data Science Intern",
     company_name: "Weelrn (Shanghai, remote)",
