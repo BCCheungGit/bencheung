@@ -1,4 +1,3 @@
-
 import {
   codeninjas,
   ocm,
@@ -21,11 +20,8 @@ import {
   ocm_checkin,
   java,
   tasky,
-  amazon
-} from '../assets';
-
-
-
+  amazon,
+} from "../assets";
 
 export const navLinks = [
   {
@@ -37,19 +33,15 @@ export const navLinks = [
     title: "Experience",
   },
   {
-    id: 'projects',
-    title: "Projects"
-
+    id: "projects",
+    title: "Projects",
   },
 
   {
     id: "contact",
     title: "Contact",
   },
-
 ];
-
-
 
 export const experiences = [
   {
@@ -59,8 +51,11 @@ export const experiences = [
     iconBg: "#FFFFFF",
     date: "May 2025 - August 2025",
     points: [
-      "Incoming intern for the summer of 2025.",
-    ]
+      "Designed and developed full stack web application with a React frontend and Java-based REST API backend",
+      "Integrated with AWS internal tools and services for deployment, testing, and monitoring to ensure scalability and safe application delivery",
+      "Collaborated with a cross-functional team of engineers and product managers to define technical requirements and deliver features on a bi-weekly sprint schedule",
+      "Performed User Acceptance and Integration Tests to ensure solid and secure code",
+    ],
   },
   {
     title: "Data Science Intern",
@@ -72,9 +67,9 @@ export const experiences = [
       "Led a team of six students to write Python scripts to run automated AI-generated learning cycles, containerized with Docker and deployed on the Cloud.",
       "Extracted data and performed analysis to quantify student interactions. ",
       "Organized weekly meetings and presentations. ",
-    ]
+    ],
   },
-  
+
   {
     title: "Frontend Software Engineer Intern",
     company_name: "Kulla (Shanghai, remote)",
@@ -85,7 +80,7 @@ export const experiences = [
       "Designed and implemented a BIM software that allows users to visualize and interact with 3D models of buildings.",
       "Led a team of three students to design and build a front-end system using Next.js and help build a back-end system using Django.",
       "Collaborated with the team to design and implement new features for the platform.",
-    ]
+    ],
   },
   {
     title: "Instructor",
@@ -96,83 +91,80 @@ export const experiences = [
     points: [
       "Taught young adults aged 7-14 the basic principles of coding languages such as Python, JavaScript, HTML, CSS, and Java. ",
       "Provided guidance and support to students as they worked through coding challenges and projects.",
-    ]
+    ],
   },
-]
-
+];
 
 export const technologies = [
   {
     name: "JavaScript",
-    icon: javascript
+    icon: javascript,
   },
   {
     name: "TypeScript",
-    icon: typescript
+    icon: typescript,
   },
   {
     name: "React",
-    icon: react
+    icon: react,
   },
   {
     name: "Python",
     icon: python,
-  }, 
-  
+  },
+
   {
     name: "Java",
     icon: java,
   },
   {
     name: "HTML",
-    icon: html
+    icon: html,
   },
   {
-  name: "CSS",
-  icon: css
-},
+    name: "CSS",
+    icon: css,
+  },
 
+  {
+    name: "Tailwind",
+    icon: tailwind,
+  },
+  {
+    name: "Node.js",
+    icon: nodejs,
+  },
+  {
+    name: "C",
+    icon: C,
+  },
 
-{
-  name: "Tailwind",
-  icon: tailwind
-},
-{
-  name: "Node.js",
-  icon: nodejs
-},
-{
-  name: "C",
-  icon: C,
-},
-
-{
-  name: "Docker",
-  icon: docker
-},
-
-]
+  {
+    name: "Docker",
+    icon: docker,
+  },
+];
 
 export const socials = [
   {
     name: "LinkedIn",
     icon: linkedin,
     url: "https://www.linkedin.com/in/benjamin-cheung-50b06b231/",
-    username: "@Benjamin Cheung"
+    username: "@Benjamin Cheung",
   },
   {
     name: "Github",
     icon: github,
     url: "https://www.github.com/BCCheungGit",
-    username: "@BCCheungGit"
+    username: "@BCCheungGit",
   },
   {
     name: "Instagram",
     icon: instagram,
     url: "https://www.instagram.com/ben_cheungg/",
-    username: "@ben_cheungg"
-  }
-]
+    username: "@ben_cheungg",
+  },
+];
 
 export const projects = [
   {
@@ -180,32 +172,27 @@ export const projects = [
     image: ocm_visitors,
     date: "Jun 2024 - Aug 2024",
     active_users: "~3000 yearly active users",
-    points: [
-      "Next.js", "Typescript", "TailwindCSS", "Supabase", "Node.js"
-    ],
+    points: ["Next.js", "Typescript", "TailwindCSS", "Supabase", "Node.js"],
     linkicon: github,
-    link: "https://github.com/BCCheungGit/OCM-Visitor-Registration"
+    link: "https://github.com/BCCheungGit/OCM-Visitor-Registration",
   },
   {
     title: "OCM Check-In System",
     image: ocm_checkin,
     date: "Jun 2023 - Sep 2023",
     active_users: "~10000 yearly active users",
-    points: [
-      "React", "Firebase", "Postgres", "Node.js",
-    ],
+    points: ["React", "Firebase", "Postgres", "Node.js"],
     linkicon: github,
-    link: "https://github.com/BCCheungGit/ocm-checkin-app"
+    link: "https://github.com/BCCheungGit/ocm-checkin-app",
   },
   {
     title: "Tasky",
     image: tasky,
     date: "November 2024 - December 2024",
     active_users: "0",
-    points: [
-      "Next.js", "Typescript", "TailwindCSS", "MongoDB", "Node.js"
-    ],
+    points: ["Next.js", "Typescript", "TailwindCSS", "MongoDB", "Node.js"],
     linkicon: github,
-    link: "https://github.com/BCCheungGit/Tasky"
+    link: "https://github.com/BCCheungGit/Tasky",
   },
-]
+];
+
