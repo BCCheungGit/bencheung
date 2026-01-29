@@ -45,6 +45,14 @@ export const navLinks = [
 
 export const experiences = [
   {
+    title: "Software Development Engineer",
+    company_name: "Amazon (New York, New York)",
+    icon: amazon,
+    iconBg: "#FFFFFF",
+    date: "July 2026 - Present",
+    points: ["Incoming in Stores Org"],
+  },
+  {
     title: "Software Development Engineer Intern",
     company_name: "Amazon (New York, New York)",
     icon: amazon,
@@ -195,4 +203,3 @@ export const projects = [
     link: "https://github.com/BCCheungGit/Tasky",
   },
 ];
-
