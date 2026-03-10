@@ -2,8 +2,6 @@
 
 import { technologies } from "../constants";
 import BallCanvas from "./canvas/Ball";
-import Piano from "./canvas/Piano";
-import Pool from "./canvas/Pool";
 import Laptop from "./canvas/Laptop";
 
 const About = () => {
@@ -37,7 +35,7 @@ const About = () => {
               always open to learning new skills.
             </p>
             <p className="mt-5">
-              When I am not coding, I enjoy swimming and playing the piano!
+              When I am not coding, I enjoy swimming, piano, and climbing!
             </p>
           </div>
         </div>
@@ -63,4 +61,3 @@ const About = () => {
 };
 
 export default About;
-

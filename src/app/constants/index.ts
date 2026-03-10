@@ -1,6 +1,5 @@
 import {
   codeninjas,
-  ocm,
   purplek,
   weelrn_logo,
   docker,
@@ -50,7 +49,7 @@ export const experiences = [
     icon: amazon,
     iconBg: "#FFFFFF",
     date: "July 2026 - Present",
-    points: ["Incoming in Stores Org"],
+    points: ["Incoming Stores Org SDE."],
   },
   {
     title: "Software Development Engineer Intern",
